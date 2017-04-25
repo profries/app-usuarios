@@ -1,3 +1,19 @@
 <h1>
-  {{title}}
+  Aplicação Usuarios
 </h1>
+<table>
+  <tr>
+    <th>Nome</th>
+    <th>Email</th>
+    <th>Username</th>
+    <th>Editar</th>
+    <th>Remover</th>
+  </tr>
+  <tr *ngFor='let usuario of usuarios'>
+    <td>{{usuario.nome}}</td>
+    <td>{{usuario.email}}</td>
+    <td>{{usuario.username}}</td>
+    <td><a href="#">Editar</a></td>
+    <td><a href="#">Remover</a></td>
+  </tr>
+</table>
